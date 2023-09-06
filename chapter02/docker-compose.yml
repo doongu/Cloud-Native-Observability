@@ -27,7 +27,7 @@ services:
       - opentelemetry-collector
     stop_grace_period: 1s
     ports:
-      - 5000:5000
+      - 5000:4999
     deploy:
       resources:
         limits:
