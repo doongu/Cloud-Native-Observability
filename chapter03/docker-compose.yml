@@ -57,6 +57,7 @@ services:
       OTEL_SERVICE_NAME: "brokentelephone-python"
   jaeger:
     image: jaegertracing/all-in-one:latest
+    platform:  linux/arm64
     container_name: jaeger
     ports:
       - "16686:16686"
